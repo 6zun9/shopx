@@ -1,0 +1,528 @@
+.container {
+  margin: 0px auto;
+  max-width: 73.125em;
+  ;
+  padding: 0px 15px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+img {
+  display: block;
+}
+
+/* header section */
+.input-search {
+  padding: 8px 15px 8px 36px;
+}
+
+.logo-wrapper {
+  float: left;
+}
+
+.logo-wrapper img {
+  width: 85px;
+}
+
+.top-header-nav-wrapper {
+  float: right;
+}
+
+.top-header-section {
+  padding: 15px 0;
+}
+
+.top-header-nav-wrapper ul li {
+  display: inline-block;
+  padding-left: 15px;
+}
+
+.top-header-nav-wrapper ul li:last-child {
+  padding-bottom: 5px;
+}
+
+.sidebar-wrapper {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+  background: rgba(0, 0, 0, 0.65);
+  transition: 0.2s;
+}
+
+.sidebar {
+  display: none;
+  background: #8ed1b7;
+  width: 60%;
+  height: 100%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 10;
+  trasition: 0.2s;
+  box-shadow: 3px 0px 8px 1px rgba(0, 0, 0, 0.4);
+}
+
+.sidebar-wrapper.active {
+  right: 0;
+}
+
+.sidebar.active {
+  display: block;
+}
+
+.sidebar-wrapper.active>body {
+  position: fixed;
+}
+
+.sidebar ul li a {
+  padding: 10px 25px;
+  text-decoration: none;
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  display: block;
+}
+
+.sidebar ul li a:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+.search-wrapper {
+  position: relative;
+  background: #8fd1b8;
+  color: #ffffff;
+  line-height: 20px;
+  box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, .12);
+  font-family: 'Lato', sans-serif;
+}
+
+.search-wrapper img {
+  top: 50%;
+  left: 10px;
+  position: absolute;
+  transform: translateY(-50%);
+}
+
+.input-search input[type="text"] {
+  width: 100%;
+  outline: none;
+  background: transparent;
+  border: 0;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.main-nav-wrapper {
+  display: none;
+}
+
+.main-nav-wrapper ul li {
+  float: left;
+  line-height: 75px;
+  padding: 0 25px;
+}
+
+.main-nav-wrapper ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  color: #45505e;
+  letter-spacing: 2px;
+}
+
+.main-nav-wrapper ul li.active a {
+  color: #b0decc;
+}
+
+.filter-nav {
+  display: none;
+}
+
+.filter-search {
+  display: none;
+}
+
+.mobile-menu-filter {
+  padding: 20px 0;
+}
+
+.filter-burger img {
+  width: 20px;
+}
+
+.filter-burger {
+  margin-top: 10px;
+  float: left;
+}
+
+#filter-search {
+  float: right;
+  width: 88%;
+}
+
+.input-search input::placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #858585;
+}
+
+.mobile-filter-nav {
+  padding: 10px 0 20px 0;
+  background: #ffffff;
+  display: none;
+}
+
+.mobile-filter-nav ul li {
+  float: left;
+  line-height: 20px;
+  padding: 0 10px;
+}
+
+.mobile-filter-nav ul li a {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 11px;
+  color: #212b35;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.mobile-filter-nav ul li a:hover, .mobile-filter-nav ul li a:focus {
+  color: #b5d9cc;
+}
+
+.product-card {
+  box-shadow: 0 0 38px 0 rgba(231, 231, 231, 0.66);
+  background-color: #ffffff;
+}
+
+.card-main {
+  position: relative;
+}
+
+.product-status {
+  position: absolute;
+  left: 20%;
+  bottom: 20%;
+}
+
+.product-menu {
+  float: left;
+  width: 26.76%;
+}
+
+.product-menu ul li {
+  padding: 15px 25px;
+}
+
+
+.product-image {
+  float: right;
+  width: 73.23%;
+  background: #e7a8c5;
+}
+.product-list ul li {
+    margin-bottom: 20px;
+}
+.product-image img {
+  width: 100%;
+}
+
+.card-product-details {
+  background: url('../images/card-separator-line.png') no-repeat;
+  background-position: bottom;
+  padding: 20px 25px;
+  text-align: center;
+}
+
+.card-product-details .product-name {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 300;
+  font-size: 23px;
+  text-transform: capitalize;
+  color: #000000;
+  padding-bottom: 15px;
+}
+
+.product-rates {
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  padding-right: 5px;
+}
+
+.product-rates .original-product-rate {
+  text-decoration: line-through;
+  padding-right: 5px;
+}
+
+.product-rates .discount-product-rate {
+  color: #8ed1b7;
+}
+
+.add-to-cart img {
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.add-to-cart {
+  padding: 25px 0;
+  text-align: center;
+}
+
+.add-to-cart a {
+  background: url('../images/cart.png') no-repeat;
+  background-size: contain;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.add-to-cart a span {
+  margin-left: 25px;
+}
+.add-to-cart a:hover {
+    color: #8ed1b7;
+}
+/* page section starts */
+#page-section {
+  margin: 10px 0;
+}
+
+/*banner section */
+#banner img {
+  width: 100%;
+}
+
+/*feature section */
+.feature-product-info {
+  background: #8ed1b7;
+}
+.feature-rate-info {
+    margin: 10px;
+}
+
+.feature-product-info h1 {
+  overflow: hidden;
+  font-size: 98px;
+  font-weight: 300;
+  font-family: 'Roboto';
+  color: rgba(0, 0, 0, 0.06);
+}
+
+.product-title {
+  font-family: 'Roboto';
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.rate-highlighter {
+  position: relative;
+}
+
+.rates {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+
+.original-rate {
+  font-size: 16px;
+  text-decoration: line-through;
+  text-align: right;
+  font-family: 'Roboto', sans-serif;
+}
+
+.discount-rate {
+  font-size: 45px;
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+}
+
+.brand-title {
+  position: absolute;
+  right: 0;
+  top: 15%;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 23px;
+  letter-spacing: 5px;
+  writing-mode: vertical-rl;
+  font-weight: 300;
+}
+
+.info-content {
+  padding: 20px 10px;
+}
+
+.product-details-info {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 20px;
+  padding: 20px 0;
+}
+
+.info-content a {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+}
+
+.info-content h3 {
+  font-family: 'Titillium Web';
+  font-size: 23px;
+  color: #000000;
+  font-weight: 300;
+}
+
+/* services-section */
+#service-section {
+  background: #202127;
+}
+
+#services-section ul li {
+  width: 50%;
+  float: left;
+}
+
+.service-wrapper {
+  margin: 10px;
+}
+
+.service-image img {
+  height: 59px;
+  padding: 10px 40px;
+}
+
+.service-title {
+  font-weight: 300;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.serveice-details {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+  color: #767676;
+  display: none;
+}
+
+#services-section ul li:nth-child(odd) {
+  background: #1d1e24;
+}
+
+#services-section ul li:nth-child(even) {
+  background: #202127
+}
+
+/* footer section */
+.top-footer-content {
+  padding: 15px 0;
+}
+
+.about-us.col {
+  display: none;
+}
+
+.top-footer-wrapper .col {
+  margin: 30px 0;
+}
+
+.footer-nav ul {
+  padding-right: 25px;
+}
+
+.footer-nav ul.right {
+  float: right;
+}
+
+.footer-nav ul.left {
+  float: left;
+}
+
+.footer-nav ul li {
+  width: auto;
+  line-height: 30px;
+}
+
+.footer-nav ul li a {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  color: #7b7c85;
+}
+
+.footer-nav ul li a i {
+  padding-right: 5px;
+}
+
+footer .title {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 400;
+  color: #1d1e24;
+  font-size: 18px;
+}
+
+.insta-logo img {
+  display: inline;
+  padding-right: 5px;
+}
+
+.instagram-pic-row {
+  padding-top: 5px;
+}
+
+.instagram-pic-row ul li img {
+  width: 100%;
+}
+
+.instagram-widget-wrapper ul {
+  list-style: none;
+}
+
+.instagram-pic-row ul li {
+  float: left;
+  width: 23%;
+  margin-left: 5px;
+}
+
+.instagram-pic-row ul li:first-child {
+  margin-left: 0;
+}
+
+.bottom-footer {
+  margin: 20px 0;
+}
+
+.payement-menthods {
+  margin: 20px 0;
+}
+
+.copyright {
+  font-size: 13px;
+  color: #7b7c85;
+  font-family: 'lato', sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
