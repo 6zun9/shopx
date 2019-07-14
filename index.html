@@ -1,43 +1,74 @@
-﻿  <!DOCTYPE html>
-  <html lang="en" dir="ltr">
+﻿
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/layout.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Alex+Brush&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400&display=swap" rel="stylesheet">
-    <link href="//db.onlinewebfonts.com/c/b18e9033532010bea11e37aa7543a869?family=Geogrotesque" rel="stylesheet" type="text/css" />
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/layout.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alex+Brush&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400&display=swap" rel="stylesheet">
+  <link href="//db.onlinewebfonts.com/c/b18e9033532010bea11e37aa7543a869?family=Geogrotesque" rel="stylesheet" type="text/css" />
 
-    <title>shopX</title>
-  </head>
+  <title>shopX</title>
+</head>
 
-  <body>
-    <header>
-      <div class="container">
-        <div class="top-header-section clearfix">
-          <div class="logo-wrapper">
+<body>
+  <header>
+    <div class="container">
+      <div class="top-header-section clearfix">
+        <div class="logo-wrapper">
+          <div class="top-header-left clearfix">
             <div class="search-section">
-
+                <form action="#">
+                  <button type="submit"><img src="./images/search.png" alt=""></button>
+                  <input type="text" placeholder="SEARCH">
+                </form>
             </div>
-            <a href="#"><img src="./images/logo.png" alt="shopX"></a>
+            <div class="logo"><a href="#"><img src="./images/logo.png" alt="shopX"></a>  </div>
           </div>
 
-          <div class="top-header-nav-wrapper">
-            <ul>
-              <li><a href="#"> <img src="./images/user.png" alt="user"> </a></li>
-              <li><a href="#"> <img src="./images/cart.png" alt="cart"> </a></li>
-              <li id="toggle"><a href="#" onclick="showMenu()"> <img src="./images/burger-menu.png" alt="menu"> </a></li>
-            </ul>
-          </div>
         </div>
-        <div class="sidebar-wrapper" id="show-sidebar" onclick="showMenu()">
 
+        <div class="top-header-nav-wrapper">
+          <ul>
+            <li><a href="#"> <img src="./images/user.png" alt="user"> </a></li>
+            <li><a href="#"> <img src="./images/cart.png" alt="cart"> </a></li>
+            <li id="toggle"><a href="#" onclick="showMenu()"> <img src="./images/burger-menu.png" alt="menu"> </a></li>
+          </ul>
         </div>
-        <div class="sidebar" id='sidebar'>
+      </div>
+      <div class="sidebar-wrapper" id="show-sidebar" onclick="showMenu()">
+
+      </div>
+      <div class="sidebar" id='sidebar'>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li class="active"><a href="#">Shop</a></li>
+          <li><a href="#">Element</a></li>
+          <li><a href="#">Pages</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Blogs</a></li>
+        </ul>
+      </div>
+
+      <div class="search-wrapper">
+        <form action="#" method="post">
+          <img src="./images/search.png" alt="search-icon">
+          <div class="input-search">
+            <input type="text" placeholder="search your products here">
+          </div>
+        </form>
+
+
+
+      </div>
+      <div class="bottom-header-section">
+
+        <div class="main-nav-wrapper">
           <ul>
             <li><a href="#">Home</a></li>
             <li class="active"><a href="#">Shop</a></li>
@@ -48,46 +79,22 @@
           </ul>
         </div>
 
-        <div class="search-wrapper">
-          <form action="#" method="post">
-            <img src="./images/search.png" alt="search-icon">
-            <div class="input-search">
-              <input type="text" placeholder="search your products here">
-            </div>
-          </form>
-
-
-
-        </div>
-        <div class="bottom-header-section">
-
-          <div class="main-nav-wrapper">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li class="active"><a href="#">Shop</a></li>
-              <li><a href="#">Element</a></li>
-              <li><a href="#">Pages</a></li>
-              <li><a href="#">Portfolio</a></li>
-              <li><a href="#">Blogs</a></li>
-            </ul>
-          </div>
-
-        </div>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <div id="page-section">
-      <div id="banner">
-        <img src="./images/slider.png" alt="slider">
-      </div>
-      <div class="products-section-wrapper">
-        <div class="product-filter-wrapper">
-          <div class="container">
-            <div class="filter-nav-wrapper clearfix">
-              <div class="filter-nav">
+  <div id="page-section">
+    <div id="banner">
+      <img src="./images/slider.png" alt="slider">
+    </div>
+    <div class="products-section-wrapper">
+      <div class="product-filter-wrapper">
+        <div class="container">
+          <div class="filter-nav-wrapper clearfix">
+            <div class="filter-nav">
+              <div class="desktop-filter-menu clearfix">
                 <ul>
-                  <li><a href="#"><img src="./images/burger-menu.png" alt=""></a></li>
-                  <li><a href="#">All</a></li>
+                  <li class="acti"><a href="#">All</a></li>
                   <li><a href="#">Home</a></li>
                   <li><a href="#">Learning</a></li>
                   <li><a href="#">Office</a></li>
@@ -95,382 +102,387 @@
                 </ul>
               </div>
 
-              <div class="filter-search">
-                <ul>
-                  <li><a href="#"><img src="./images/search.png" alt="search-products"></a></li>
-                  <li><a href="#">search</a></li>
-                </ul>
+            </div>
+
+            <div class="search-section">
+                <form action="#">
+                  <button type="submit"><img src="./images/search.png" alt=""></button>
+                  <input type="text" placeholder="SEARCH">
+                </form>
+            </div>
+
+          </div>
+          <div class="mobile-filter-section-wrapper ">
+            <div class="mobile-menu-filter clearfix">
+              <div class="filter-burger" id="filter-burger-icon" onclick="showFilterMenu()">
+                <img src="./images/burger-menu.png" alt="burger-menu-filter">
+              </div>
+              <div class="search-wrapper" id="filter-search">
+                <form class="" action="#" method="post">
+                  <img src="./images/search.png" alt="search-icon">
+                  <div class="input-search">
+                    <input type="text" placeholder="home,office,outdoor ">
+                  </div>
+                </form>
+
               </div>
 
             </div>
-            <div class="mobile-filter-section-wrapper ">
-              <div class="mobile-menu-filter clearfix">
-                <div class="filter-burger" id="filter-burger-icon" onclick="showFilterMenu()">
-                    <img src="./images/burger-menu.png" alt="burger-menu-filter">
-                </div>
-                <div class="search-wrapper" id="filter-search">
-                  <form class="" action="#" method="post">
-                    <img src="./images/search.png" alt="search-icon">
-                    <div class="input-search">
-                      <input type="text" placeholder="home,office,outdoor ">
-                    </div>
-                  </form>
 
-                </div>
-
-              </div>
-              <div class="mobile-filter-nav clearfix">
-                <ul>
-                  <li><a href="#">All</a></li>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Learning</a></li>
-                  <li><a href="#">Office</a></li>
-                  <li><a href="#">Outdoor</a></li>
-                </ul>
-              </div>
+            <div class="mobile-filter-nav clearfix">
+              <ul>
+                <li><a href="#">All</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Learning</a></li>
+                <li><a href="#">Office</a></li>
+                <li><a href="#">Outdoor</a></li>
+              </ul>
             </div>
-            <div class="products-wrapper">
-              <div class="product-list">
-                <ul>
-                  <li>
-                    <div class="product-card">
-                      <div class="card-main clearfix">
-                        <div class="product-menu">
-                          <ul>
-                            <li><a><img src="./images/burger-menu.png" alt="menu"></a></li>
-                            <li><a> <img src="./images/favourite.png" alt="like"></a></li>
-                            <li><a> <img src="./images/compare.png" alt="compare"></a></li>
-                          </ul>
-                        </div>
-                        <div class="product-image">
-                          <img src="https://stat.homeshop18.com/homeshop18/images/productImages/808/aapno-rajasthan-3-pc-ceramic-decorative-vase-medium_f78fedef145e153cf32e42cc58e5ead7.jpg" alt="product-image">
-                        </div>
-                        <div class="product-status">
-                          <img src="./images/new.png" alt="new">
-                        </div>
-                      </div>
-                      <div class="card-product-details">
-                            <div class="product-name">Lava Vtase</div>
-                              <div class="product-rates">
-                                <span class="original-product-rate">$55.00</span>
-                                <span class="discount-product-rate">$35.00</span>
-                              </div>
-                      </div>
-                      <div class="card-footer">
-                        <div class="add-to-cart"><a href="#"><span>ADD TO CART</span></a></div>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="product-card">
-                      <div class="card-main clearfix">
-                        <div class="product-menu">
-                          <ul>
-                            <li><a><img src="./images/burger-menu.png" alt="menu"></a></li>
-                            <li><a> <img src="./images/favourite.png" alt="like"></a></li>
-                            <li><a> <img src="./images/compare.png" alt="compare"></a></li>
-                          </ul>
-                        </div>
-                        <div class="product-image">
-                          <img src="https://image.freepik.com/free-photo/ceramic-vase-from-greece-isolated-white_102618-84.jpg" alt="product-image">
-                        </div>
-                        <div class="product-status">
-                          <img src="./images/hot.png" alt="hot">
-                        </div>
-                      </div>
-                      <div class="card-product-details">
-                            <div class="product-name">Ceramic Pot</div>
-                              <div class="product-rates">
-                                <span class="original-product-rate">$55.00</span>
-                                <span class="discount-product-rate">$35.00</span>
-                              </div>
-                      </div>
-                      <div class="card-footer">
-                        <div class="add-to-cart"><a href="#"><span>ADD TO CART</span></a></div>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="product-card">
-                      <div class="card-main clearfix">
-                        <div class="product-menu">
-                          <ul>
-                            <li><a><img src="./images/burger-menu.png" alt="menu"></a></li>
-                            <li><a> <img src="./images/favourite.png" alt="like"></a></li>
-                            <li><a> <img src="./images/compare.png" alt="compare"></a></li>
-                          </ul>
-                        </div>
-                        <div class="product-image">
-                          <img src="https://cdn.pixabay.com/photo/2015/11/19/10/38/food-1050813_960_720.jpg" alt="product-image">
-                        </div>
-                        <div class="product-status">
-                          <img src="./images/new.png" alt="new">
-                        </div>
-                      </div>
-                      <div class="card-product-details">
-                            <div class="product-name">Dinnerware Service</div>
-                              <div class="product-rates">
-                                <span class="original-product-rate">$55.00</span>
-                                <span class="discount-product-rate">$35.00</span>
-                              </div>
-                      </div>
-                      <div class="card-footer">
-                        <div class="add-to-cart"><a href="#"><span>ADD TO CART</span></a></div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <div class="product-list">
-                <ul>
-                  <li>
-                    <div class="product-card">
-                      <div class="card-main clearfix">
-                        <div class="product-menu">
-                          <ul>
-                            <li><a><img src="./images/burger-menu.png" alt="menu"></a></li>
-                            <li><a> <img src="./images/favourite.png" alt="like"></a></li>
-                            <li><a> <img src="./images/compare.png" alt="compare"></a></li>
-                          </ul>
-                        </div>
-                        <div class="product-image">
-                          <img src="https://cdn.pixabay.com/photo/2016/11/23/13/46/honey-1852934_960_720.jpg" alt="product-image">
-                        </div>
-
-                      </div>
-                      <div class="card-product-details">
-                            <div class="product-name">Norm Jars</div>
-                              <div class="product-rates">
-                                <span class="original-product-rate">$55.00</span>
-                                <span class="discount-product-rate">$35.00</span>
-                              </div>
-                      </div>
-                      <div class="card-footer">
-                        <div class="add-to-cart"><a href="#"><span>ADD TO CART</span></a></div>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="product-card">
-                      <div class="card-main clearfix">
-                        <div class="product-menu">
-                          <ul>
-                            <li><a><img src="./images/burger-menu.png" alt="menu"></a></li>
-                            <li><a> <img src="./images/favourite.png" alt="like"></a></li>
-                            <li><a> <img src="./images/compare.png" alt="compare"></a></li>
-                          </ul>
-                        </div>
-                        <div class="product-image">
-                          <img src="https://cdn.pixabay.com/photo/2016/07/09/14/13/boat-1506334_960_720.jpg" alt="product-image">
-                        </div>
-                        <div class="product-status">
-                          <img src="./images/hot.png" alt="hot">
-
-                        </div>
-                      </div>
-                      <div class="card-product-details">
-                            <div class="product-name">Floating Boat</div>
-                              <div class="product-rates">
-                                <span class="original-product-rate">$55.00</span>
-                                <span class="discount-product-rate">$35.00</span>
-                              </div>
-                      </div>
-                      <div class="card-footer">
-                        <div class="add-to-cart"><a href="#"><span>ADD TO CART</span></a></div>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="product-card">
-                      <div class="card-main clearfix">
-                        <div class="product-menu">
-                          <ul>
-                            <li><a><img src="./images/burger-menu.png" alt="menu"></a></li>
-                            <li><a> <img src="./images/favourite.png" alt="like"></a></li>
-                            <li><a> <img src="./images/compare.png" alt="compare"></a></li>
-                          </ul>
-                        </div>
-                        <div class="product-image">
-                          <img src="https://cdn.pixabay.com/photo/2019/06/20/18/32/colored-pots-4287760_960_720.jpg" alt="product-image">
-                        </div>
-                        <div class="product-status">
-                          <img src="./images/new.png" alt="new">
-                        </div>
-                      </div>
-                      <div class="card-product-details">
-                            <div class="product-name">Ceramic Pot</div>
-                              <div class="product-rates">
-                                <span class="original-product-rate">$55.00</span>
-                                <span class="discount-product-rate">$35.00</span>
-                              </div>
-                      </div>
-                      <div class="card-footer">
-                        <div class="add-to-cart"><a href="#"><span>ADD TO CART</span></a></div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
 
 
-
+          </div>
+          <div class="products-wrapper">
+            <div class="product-list clearfix">
+              <ul>
+                <li>
+                  <div class="product-card">
+                    <div class="card-main clearfix">
+                      <div class="product-menu">
+                        <ul>
+                          <li><a><img src="./images/burger-menu.png" alt="menu"></a></li>
+                          <li><a> <img src="./images/favourite.png" alt="like"></a></li>
+                          <li><a> <img src="./images/compare.png" alt="compare"></a></li>
+                        </ul>
+                      </div>
+                      <div class="product-image">
+                        <img src="https://stat.homeshop18.com/homeshop18/images/productImages/808/aapno-rajasthan-3-pc-ceramic-decorative-vase-medium_f78fedef145e153cf32e42cc58e5ead7.jpg" alt="product-image">
+                      </div>
+                      <div class="product-status">
+                        <img src="./images/new.png" alt="new">
+                      </div>
+                    </div>
+                    <div class="card-product-details">
+                      <div class="product-name">Lava Vtase</div>
+                      <div class="product-rates">
+                        <span class="original-product-rate">$55.00</span>
+                        <span class="discount-product-rate">$35.00</span>
+                      </div>
+                    </div>
+                    <div class="card-footer">
+                      <div class="add-to-cart"><a href="#"><span>ADD TO CART</span></a></div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="product-card">
+                    <div class="card-main clearfix">
+                      <div class="product-menu">
+                        <ul>
+                          <li><a><img src="./images/burger-menu.png" alt="menu"></a></li>
+                          <li><a> <img src="./images/favourite.png" alt="like"></a></li>
+                          <li><a> <img src="./images/compare.png" alt="compare"></a></li>
+                        </ul>
+                      </div>
+                      <div class="product-image">
+                        <img src="https://image.freepik.com/free-photo/ceramic-vase-from-greece-isolated-white_102618-84.jpg" alt="product-image">
+                      </div>
+                      <div class="product-status">
+                        <img src="./images/hot.png" alt="hot">
+                      </div>
+                    </div>
+                    <div class="card-product-details">
+                      <div class="product-name">Ceramic Pot</div>
+                      <div class="product-rates">
+                        <span class="original-product-rate">$55.00</span>
+                        <span class="discount-product-rate">$35.00</span>
+                      </div>
+                    </div>
+                    <div class="card-footer">
+                      <div class="add-to-cart"><a href="#"><span>ADD TO CART</span></a></div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="product-card">
+                    <div class="card-main clearfix">
+                      <div class="product-menu">
+                        <ul>
+                          <li><a><img src="./images/burger-menu.png" alt="menu"></a></li>
+                          <li><a> <img src="./images/favourite.png" alt="like"></a></li>
+                          <li><a> <img src="./images/compare.png" alt="compare"></a></li>
+                        </ul>
+                      </div>
+                      <div class="product-image">
+                        <img src="https://cdn.pixabay.com/photo/2015/11/19/10/38/food-1050813_960_720.jpg" alt="product-image">
+                      </div>
+                      <div class="product-status">
+                        <img src="./images/new.png" alt="new">
+                      </div>
+                    </div>
+                    <div class="card-product-details">
+                      <div class="product-name">Dinnerware Service</div>
+                      <div class="product-rates">
+                        <span class="original-product-rate">$55.00</span>
+                        <span class="discount-product-rate">$35.00</span>
+                      </div>
+                    </div>
+                    <div class="card-footer">
+                      <div class="add-to-cart"><a href="#"><span>ADD TO CART</span></a></div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
+            <div class="product-list">
+              <ul>
+                <li>
+                  <div class="product-card">
+                    <div class="card-main clearfix">
+                      <div class="product-menu">
+                        <ul>
+                          <li><a><img src="./images/burger-menu.png" alt="menu"></a></li>
+                          <li><a> <img src="./images/favourite.png" alt="like"></a></li>
+                          <li><a> <img src="./images/compare.png" alt="compare"></a></li>
+                        </ul>
+                      </div>
+                      <div class="product-image">
+                        <img src="https://cdn.pixabay.com/photo/2016/11/23/13/46/honey-1852934_960_720.jpg" alt="product-image">
+                      </div>
+
+                    </div>
+                    <div class="card-product-details">
+                      <div class="product-name">Norm Jars</div>
+                      <div class="product-rates">
+                        <span class="original-product-rate">$55.00</span>
+                        <span class="discount-product-rate">$35.00</span>
+                      </div>
+                    </div>
+                    <div class="card-footer">
+                      <div class="add-to-cart"><a href="#"><span>ADD TO CART</span></a></div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="product-card">
+                    <div class="card-main clearfix">
+                      <div class="product-menu">
+                        <ul>
+                          <li><a><img src="./images/burger-menu.png" alt="menu"></a></li>
+                          <li><a> <img src="./images/favourite.png" alt="like"></a></li>
+                          <li><a> <img src="./images/compare.png" alt="compare"></a></li>
+                        </ul>
+                      </div>
+                      <div class="product-image">
+                        <img src="https://cdn.pixabay.com/photo/2016/07/09/14/13/boat-1506334_960_720.jpg" alt="product-image">
+                      </div>
+                      <div class="product-status">
+                        <img src="./images/hot.png" alt="hot">
+
+                      </div>
+                    </div>
+                    <div class="card-product-details">
+                      <div class="product-name">Floating Boat</div>
+                      <div class="product-rates">
+                        <span class="original-product-rate">$55.00</span>
+                        <span class="discount-product-rate">$35.00</span>
+                      </div>
+                    </div>
+                    <div class="card-footer">
+                      <div class="add-to-cart"><a href="#"><span>ADD TO CART</span></a></div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="product-card">
+                    <div class="card-main clearfix">
+                      <div class="product-menu">
+                        <ul>
+                          <li><a><img src="./images/burger-menu.png" alt="menu"></a></li>
+                          <li><a> <img src="./images/favourite.png" alt="like"></a></li>
+                          <li><a> <img src="./images/compare.png" alt="compare"></a></li>
+                        </ul>
+                      </div>
+                      <div class="product-image">
+                        <img src="https://cdn.pixabay.com/photo/2019/06/20/18/32/colored-pots-4287760_960_720.jpg" alt="product-image">
+                      </div>
+                      <div class="product-status">
+                        <img src="./images/new.png" alt="new">
+                      </div>
+                    </div>
+                    <div class="card-product-details">
+                      <div class="product-name">Ceramic Pot</div>
+                      <div class="product-rates">
+                        <span class="original-product-rate">$55.00</span>
+                        <span class="discount-product-rate">$35.00</span>
+                      </div>
+                    </div>
+                    <div class="card-footer">
+                      <div class="add-to-cart"><a href="#"><span>ADD TO CART</span></a></div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+
+
           </div>
         </div>
       </div>
-
-      <section id="features-section">
-        <div class="features-wrapper">
-          <div class="feature-rate-info">
-            <div class="rate-highlighter">
-              <div class="brand-title">WOOD STAND</div>
-              <img src="./images/feature-circle.png" alt="rate-highlighter">
-              <div class="rates">
-                <div class="original-rate"> <span>$</span>65.00</div>
-                <div class="discount-rate"> <span>$</span>35.00</div>
-              </div>
-
-
-            </div>
-          </div>
-          <div class="feature-product-info">
-            <h1>Featured</h1>
-            <div class="info-content">
-              <span class="product-title">Lava vase</span>
-              <h3>Ceramic Planter with Wood Stand</h3>
-
-              <p class="product-details-info">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
-                egestas semper. Aenean
-                ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-              <a href="#">Shop Now</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="services-section">
-
-        <div class="service-list-wrapper clearfix">
-          <ul>
-            <li>
-              <div class="service-wrapper">
-                <span class="service-image">
-                  <img src="./images/fast-delivery.png" alt="fast-deliver">
-                </span>
-
-                <h5 class="service-title">FAST DELIVERY</h5>
-
-
-                <p class="serveice-details">same day delivery as soon as possible</p>
-
-              </div>
-            </li>
-            <li>
-              <div class="service-wrapper">
-                <div class="service-image">
-                  <img src="./images/discount.png" alt="fast-deliver">
-                </div>
-                <h5 class="service-title">SPECIAL DISCOUNT</h5>
-                <p class="serveice-details">Get attractive offers day by day</p>
-              </div>
-            </li>
-            <li>
-              <div class="service-wrapper">
-                <div class="service-image">
-                  <img src="./images/checkout.png" alt="fast-deliver">
-                </div>
-                <h5 class="service-title">SECURE CHECKOUT</h5>
-                <p class="serveice-details">Fully secured SSL checkout technology</p>
-
-              </div>
-            </li>
-            <li>
-              <div class="service-wrapper">
-                <div class="service-image">
-                  <img src="./images/money.png" alt="fast-deliver">
-                </div>
-                <h5 class="service-title">MONEY RETURNS</h5>
-                <p class="serveice-details">100% Money back guarntee</p>
-
-              </div>
-            </li>
-          </ul>
-        </div>
-
-      </section>
     </div>
 
-    <footer>
-      <div class="container">
-        <div class="top-footer-wrapper">
-          <div class="about-us col">
-            <div class="top-footer-content">
-              <div class="footer-logo">
-                <img src="./images/logo.png" alt="foooter-logo">
-              </div>
-              <div class="company-details">
-                <p>Watson Website Builder is a big library of pre-designed web elements which help you create website in few minutes.</p>
-                <p><a href="#">Read More</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="footer-nav col">
-            <div class="footer-nav-title title">Useful Links</div>
-            <div class="top-footer-content clearfix">
-              <ul class="left">
-                <li><a href="#"><i class="fas fa-angle-double-right"></i><span>Our Brands</span></a></li>
-                <li><a href="#"><i class="fas fa-angle-double-right"></i><span>Special Offers</span></a></li>
-                <li><a href="#"><i class="fas fa-angle-double-right"></i><span>Help Topics</span></a></li>
-                <li><a href="#"><i class="fas fa-angle-double-right"></i><span>Delivery Information</span></a></li>
-                <li><a href="#"><i class="fas fa-angle-double-right"></i><span>Social Media</span></a></li>
-              </ul>
-              <ul class="right">
-                <li><a href="#"><i class="fas fa-angle-double-right"></i><span>Gift Vouchers</span></a></li>
-                <li><a href="#"><i class="fas fa-angle-double-right"></i><span>Latest Jobs</span></a></li>
-                <li><a href="#"><i class="fas fa-angle-double-right"></i><span>Terms&Conditions</span></a></li>
-                <li><a href="#"><i class="fas fa-angle-double-right"></i><span>Affiliations</span></a></li>
-              </ul>
-
-            </div>
-          </div>
-          <div class="instagram-widget-wrapper col">
-            <div class="insta-logo title"><img src="./images/instagram.png" alt="instagram-logo">Instagram</div>
-            <div class="top-footer-content">
-              <div class="instagram-pic-row clearfix">
-                <ul>
-                  <li><a href="#"><img src="https://images.unsplash.com/photo-1559633546-e215cc804a02?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80" alt=""></a></li>
-                    <li><a href="#"><img src="https://images.unsplash.com/photo-1527438731821-03aefdf5c33b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80" alt=""></a></li>
-                    <li><a href="#"><img src="https://images.unsplash.com/photo-1559633546-e215cc804a02?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80" alt=""></a></li>
-                    <li><a href="#"><img src="https://images.unsplash.com/photo-1527438731821-03aefdf5c33b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80" alt=""></a></li>
-
-              </div>
-              <div class="instagram-pic-row clearfix">
-                <ul>
-                  <li><a href="#"><img src="https://images.unsplash.com/photo-1559633546-e215cc804a02?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80" alt=""></a></li>
-                  <li><a href="#"><img src="https://images.unsplash.com/photo-1527438731821-03aefdf5c33b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80" alt=""></a></li>
-                  <li><a href="#"><img src="https://images.unsplash.com/photo-1559633546-e215cc804a02?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80" alt=""></a></li>
-                  <li><a href="#"><img src="https://images.unsplash.com/photo-1527438731821-03aefdf5c33b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80" alt=""></a></li>
-
-              </div>
-
+    <section id="features-section">
+      <div class="features-wrapper">
+        <div class="feature-rate-info">
+          <div class="rate-highlighter">
+            <div class="brand-title">WOOD STAND</div>
+            <img src="./images/feature-circle.png" alt="rate-highlighter">
+            <div class="rates">
+              <div class="original-rate"> <span>$</span>65.00</div>
+              <div class="discount-rate"> <span>$</span>35.00</div>
             </div>
 
 
           </div>
         </div>
-        <div class="bottom-footer clearfix">
-          <div class="payement-menthods">
-            <img src="./images/payment.png" alt="payment-card-options">
-          </div>
-          <div class="copyright">
-            © 2002-2018 themexpert Inc. All rights reserved.
+        <div class="feature-product-info">
+          <h1>Featured</h1>
+          <div class="info-content">
+            <span class="product-title">Lava vase</span>
+            <h3>Ceramic Planter with Wood Stand</h3>
+
+            <p class="product-details-info">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
+              egestas semper. Aenean
+              ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            <a href="#">Shop Now</a>
           </div>
         </div>
       </div>
-    </footer>
+    </section>
 
-    <script src="./js/script.js"></script>
-    <script src="https://kit.fontawesome.com/f86a146e27.js"></script>
-  </body>
+    <section id="services-section">
 
-  </html>
+      <div class="service-list-wrapper clearfix">
+        <ul>
+          <li>
+            <div class="service-wrapper">
+              <span class="service-image">
+                <img src="./images/fast-delivery.png" alt="fast-deliver">
+              </span>
+
+              <h5 class="service-title">FAST DELIVERY</h5>
+
+
+              <p class="serveice-details">same day delivery as soon as possible</p>
+
+            </div>
+          </li>
+          <li>
+            <div class="service-wrapper">
+              <div class="service-image">
+                <img src="./images/discount.png" alt="fast-deliver">
+              </div>
+              <h5 class="service-title">SPECIAL DISCOUNT</h5>
+              <p class="serveice-details">Get attractive offers day by day</p>
+            </div>
+          </li>
+          <li>
+            <div class="service-wrapper">
+              <div class="service-image">
+                <img src="./images/checkout.png" alt="fast-deliver">
+              </div>
+              <h5 class="service-title">SECURE CHECKOUT</h5>
+              <p class="serveice-details">Fully secured SSL checkout technology</p>
+
+            </div>
+          </li>
+          <li>
+            <div class="service-wrapper">
+              <div class="service-image">
+                <img src="./images/money.png" alt="fast-deliver">
+              </div>
+              <h5 class="service-title">MONEY RETURNS</h5>
+              <p class="serveice-details">100% Money back guarntee</p>
+
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </section>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="top-footer-wrapper">
+        <div class="about-us col">
+          <div class="top-footer-content">
+            <div class="footer-logo">
+              <img src="./images/logo.png" alt="foooter-logo">
+            </div>
+            <div class="company-details">
+              <p>Watson Website Builder is a big library of pre-designed web elements which help you create website in few minutes.</p>
+              <p><a href="#">Read More</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-nav col">
+          <div class="footer-nav-title title">Useful Links</div>
+          <div class="top-footer-content clearfix">
+            <ul class="left">
+              <li><a href="#"><i class="fas fa-angle-double-right"></i><span>Our Brands</span></a></li>
+              <li><a href="#"><i class="fas fa-angle-double-right"></i><span>Special Offers</span></a></li>
+              <li><a href="#"><i class="fas fa-angle-double-right"></i><span>Help Topics</span></a></li>
+              <li><a href="#"><i class="fas fa-angle-double-right"></i><span>Delivery Information</span></a></li>
+              <li><a href="#"><i class="fas fa-angle-double-right"></i><span>Social Media</span></a></li>
+            </ul>
+            <ul class="right">
+              <li><a href="#"><i class="fas fa-angle-double-right"></i><span>Gift Vouchers</span></a></li>
+              <li><a href="#"><i class="fas fa-angle-double-right"></i><span>Latest Jobs</span></a></li>
+              <li><a href="#"><i class="fas fa-angle-double-right"></i><span>Terms&Conditions</span></a></li>
+              <li><a href="#"><i class="fas fa-angle-double-right"></i><span>Affiliations</span></a></li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="instagram-widget-wrapper col">
+          <div class="insta-logo title"><img src="./images/instagram.png" alt="instagram-logo">Instagram</div>
+          <div class="top-footer-content">
+            <div class="instagram-pic-row clearfix">
+              <ul>
+                <li><a href="#"><img src="https://images.unsplash.com/photo-1559633546-e215cc804a02?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80" alt=""></a></li>
+                <li><a href="#"><img src="https://images.unsplash.com/photo-1527438731821-03aefdf5c33b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80" alt=""></a></li>
+                <li><a href="#"><img src="https://images.unsplash.com/photo-1559633546-e215cc804a02?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80" alt=""></a></li>
+                <li><a href="#"><img src="https://images.unsplash.com/photo-1527438731821-03aefdf5c33b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80" alt=""></a></li>
+              </ul>
+            </div>
+            <div class="instagram-pic-row clearfix">
+              <ul>
+                <li><a href="#"><img src="https://images.unsplash.com/photo-1559633546-e215cc804a02?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80" alt=""></a></li>
+                <li><a href="#"><img src="https://images.unsplash.com/photo-1527438731821-03aefdf5c33b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80" alt=""></a></li>
+                <li><a href="#"><img src="https://images.unsplash.com/photo-1559633546-e215cc804a02?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80" alt=""></a></li>
+                <li><a href="#"><img src="https://images.unsplash.com/photo-1527438731821-03aefdf5c33b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80" alt=""></a></li>
+              </ul>
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+      <div class="bottom-footer clearfix">
+        <div class="payement-menthods">
+          <img src="./images/payment.png" alt="payment-card-options">
+        </div>
+        <div class="copyright">
+          © 2002-2018 themexpert Inc. All rights reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/script.js"></script>
+  <script src="https://kit.fontawesome.com/f86a146e27.js"></script>
+</body>
+
+</html>
