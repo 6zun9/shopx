@@ -445,14 +445,25 @@ img {
   padding: 15px 0;
 }
 
-.about-us.col {
+.about-us {
   display: none;
 }
 
 .top-footer-wrapper .col {
   margin: 30px 0;
 }
-
+.company-details  {
+    font-family: 'Roboto',sans-serif;
+    font-weight: 300;
+    color: #7b7c85;
+    font-size: 13px;
+}
+.company-details a{
+    color: #7b7c85;
+}
+p.read-more {
+    margin-top: 20px;
+}
 .footer-nav ul {
   padding-right: 25px;
 }
@@ -643,13 +654,70 @@ footer .title {
 .filter-nav-wrapper {
     background: url(../images/filter-line.png)no-repeat;
     background-position: bottom;
+    line-height: 40px;
 }
 .products-wrapper{
-  margin-top: 50px;
+  margin: 50px 0;
 }
 
 .product-list ul li {
     float: left;
-    width: 33.33%;
+    width: 30.33%;
+}
+.product-list ul li:nth-child(3n+2) {
+    padding:0 30px;
+}
+.feature-rate-info {
+    float:left;
+    width:48%;
+}
+
+.feature-product-info {
+    float: right;
+    width:48%;
+}
+#features-section {
+    margin-top: 50px;
+}
+.features-wrapper {
+    background: url('../images/feature-background-dots.png') no-repeat;
+    background-position: right;
+}
+.info-content {
+    background: url('../images/feature-right-curl-line.png') no-repeat;
+    background-position: right;
+}
+#services-section ul li {
+    width: 25%;
+}
+.serveice-details {
+    display: block;
+}
+.about-us {
+    display: block;
+}
+.top-footer-wrapper .col {
+    float: left;
+    width: 30.33%;
+}
+.top-footer-wrapper >.col:nth-child(2) {
+    padding:0 25px;
+}
+.footer-nav ul {
+    width: 50%;
+    padding: 0px;
+}
+.payement-menthods {
+    float: right;
+    margin: 0;
+}
+
+.copyright {
+    line-height: 65px;
+    float: left;
+    text-align: center;
+}
+.bottom-footer{
+  margin:0;
 }
 }
