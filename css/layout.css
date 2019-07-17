@@ -170,7 +170,8 @@ img {
 
 #filter-search {
   float: right;
-  width: 88%;
+  width: 80%;
+  margin-right: 32px;
 }
 
 .input-search input::placeholder {
@@ -208,23 +209,33 @@ img {
 }
 
 .product-card {
+  margin: 0 auto;
+  width: 80%;
   box-shadow: 0 0 38px 0 rgba(231, 231, 231, 0.66);
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
 }
 
-.card-main {
-  position: relative;
-}
 
 .product-status {
+  height: 49px;
   position: absolute;
-  left: 20%;
-  bottom: 20%;
+  bottom: 15%;
+  left: -15%;
+  width: 49px;
+  background: #e7a8c6;
+  border-radius: 100%;
+}
+.product-status p {
+    padding: 13px 0;
+    color: #ffffff;
+    font-family: 'Titillium Web',sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
 }
 
 .product-menu {
   float: left;
-  width: 26.76%;
 }
 
 .product-menu ul li {
@@ -232,31 +243,30 @@ img {
 }
 
 .product-image {
+  position: relative;
   float: right;
-  width: 73.23%;
-  background: #e7a8c5;
 }
 
 .product-list ul li {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .product-image img {
-  width: 100%;
-  height: 280px;
+  max-width: 100%;
+  height: 260px;
 }
 
 .card-product-details {
   background: url('../images/card-separator-line.png') no-repeat;
   background-position: bottom;
-  padding: 20px 25px;
+  padding: 35px 25px;
   text-align: center;
 }
 
 .card-product-details .product-name {
   font-family: 'Titillium Web', sans-serif;
   font-weight: 300;
-  font-size: 23px;
+  font-size: 14px;
   text-transform: capitalize;
   color: #000000;
   padding-bottom: 15px;
@@ -324,6 +334,7 @@ img {
 
 .feature-rate-info {
   margin: 10px;
+  position: relative;
 }
 
 .feature-product-info h1 {
@@ -342,14 +353,21 @@ img {
 }
 
 .rate-highlighter {
+  height: 266px;
   position: relative;
+  width: 266px;
+  background: #e7a8c6;
+  border-radius: 100%;
 }
-
-.rates {
-  position: absolute;
-  top: 50%;
-  left: 35%;
-  transform: translate(-50%, -50%);
+.rate-highlighter> p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+p.original-rate {
+    top: 38%;
+    left: 65%;
 }
 
 .original-rate {
@@ -414,7 +432,7 @@ img {
 }
 
 .service-wrapper {
-  margin: 10px;
+  margin: 10px auto;
 }
 
 .service-image img {
@@ -559,9 +577,7 @@ footer .title {
 
 /* responsive media queries */
 @media only screen and (min-width:768px) {
-  .container {
-    padding: 10px 30px;
-  }
+
 
   header .container-fluid {
     background: url('../images/header-separator.png');
@@ -683,7 +699,7 @@ footer .title {
   }
 
   .filter-nav-wrapper {
-    background: url(../images/filter-line.png)no-repeat;
+    background: url(../images/filter-line.png) repeat-x;
     background-position: bottom;
     line-height: 40px;
   }
@@ -692,13 +708,14 @@ footer .title {
     margin: 50px 0;
   }
 
+  .product-menu {
+    width: 30%;
+}
+
+
   .product-list ul li {
     float: left;
-    width: 48.53%;
-  }
-
-  .product-list ul li:nth-child(even) {
-    padding-left: 20px;
+    width: 50%;
   }
 
   .feature-rate-info {
@@ -716,10 +733,12 @@ footer .title {
     margin-top: 50px;
   }
 
-  .features-wrapper {
-    background: url('../images/feature-background-dots.png') no-repeat;
-    background-position: right;
-  }
+.rate-highlighter{
+  left: 20%;
+  top: 60px;
+
+}
+
 
   #services-section ul li {
     width: 25%;
@@ -796,27 +815,45 @@ footer .title {
 }
 
 @media only screen and (min-width:992px) {
+
+.rate-highlighter{
+  left:25%;
+}
+.feature-product-info h1{
+  font-size:168px;
+}
+.info-content{
+  background: url(../images/feature-curl.png);
+}
   .service-wrapper {
     padding: 10px;
   }
 
   .product-list ul li {
-    width: 31.1%;
+    width: 33%;
   }
 
   .filter-nav-wrapper .search-section input::placeholder {
     text-align: left;
   }
 
-  .product-list ul li:nth-child(even) {
-    padding-left: 0;
+.product-menu{
+  width: 20%;
+}
+
+  .about-us.col, .footer-nav.col {
+    width:30.33%;
   }
 
-  .product-list ul li:nth-child(3n+2) {
-    padding: 0px 30px;
-  }
+.company-details{
+  display:block;
+}
 
-  .product-menu ul li:nth-child(3n+2) {
-    padding: 0px 25px;
+}
+
+@media screen and min-width(1024px){
+  .rate-highlighter{
+      left:50%;
+     top: 50px;
   }
 }
