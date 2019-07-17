@@ -817,6 +817,7 @@ footer .title {
 
 @media only screen and (min-width:992px) {
 
+
 .rate-highlighter{
   left:25%;
 }
@@ -848,6 +849,12 @@ footer .title {
 
 .company-details{
   display:block;
+}
+.about-us.col, .footer-nav.col,.instagram-widget-wrapper.col{
+  width:33.33%;
+}
+.top-footer-wrapper>.col:nth-child(2){
+  padding:0;
 }
 
 }
