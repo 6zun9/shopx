@@ -171,7 +171,7 @@ img {
 #filter-search {
   float: right;
   width: 80%;
-  margin-right: 32px;
+  margin-right: 12px;
 }
 
 .input-search input::placeholder {
@@ -235,7 +235,7 @@ img {
 }
 
 .product-menu {
-  width: 15%;
+  width: 20%;
   float: left;
 }
 
@@ -324,8 +324,13 @@ img {
 }
 
 /*banner section */
+#banner {
+    background: #a2e4bc;
+}
+
 #banner img {
-  width: 100%;
+  max-width: 100%;
+  height:auto;
 }
 
 /*feature section */
@@ -708,11 +713,16 @@ footer .title {
   .products-wrapper {
     margin: 50px 0;
   }
+  .product-card{
+    width:90%;
+  }
 
   .product-menu {
-    width: 30%;
+    width: 20%;
 }
-
+.product-image img{
+  height: 330px;
+}
 
   .product-list ul li {
     float: left;
@@ -829,6 +839,9 @@ footer .title {
 }
   .service-wrapper {
     padding: 10px;
+  }
+  .product-image img{
+    height:300px;
   }
 
   .product-list ul li {
