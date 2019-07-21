@@ -84,6 +84,10 @@
 @media screen and (min-width:360px){
   .carousel-container{
     height:200px;
+
+  }
+  .carousel-details {
+    display:none;
   }
   .carousel-image-wrapper img{
     height:200px;
