@@ -31,11 +31,14 @@ class Carousel {
   }
 
   build(){
+    console.log(window.innerWidth);
     //setting container and image wrapper  dimension dynamically
     if(window.innerWidth > 1349){
-      window.innerWidth = 1349;
+      this.imageWidth = 1349;
+    }else{
+      this.imageWidth  = window.innerWidth;
     }
-     this.imageWidth  = window.innerWidth;
+
 
 
 
