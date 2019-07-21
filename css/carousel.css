@@ -100,6 +100,9 @@
   .carousel-image-wrapper img{
     height:auto;
   }
+  .carousel-details {
+    display:block;
+  }
 }
 @media screen and (min-width:992px){
   .carousel-container{
