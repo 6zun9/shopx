@@ -40,6 +40,9 @@
     font-weight: 600;
     letter-spacing:1px;
 }
+.carousel-details a:hover{
+  color:#8ed1b7;
+}
 
 
 .arrow{
