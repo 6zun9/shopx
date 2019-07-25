@@ -31,11 +31,12 @@ class Carousel {
   }
 
   build(){
-    console.log(window.innerWidth);
+
     //setting container and image wrapper  dimension dynamically
-    if(window.innerWidth > 1349){
+     if(window.innerWidth >1349 && window.innerWidth <1440){
       this.imageWidth = 1349;
-    }else{
+    }
+    else{
       this.imageWidth  = window.innerWidth;
     }
 
@@ -118,7 +119,7 @@ class Carousel {
      this.windowResizeTimeout = setTimeout( ()=> {
         this.destroy();
         this.build();
-      }, 400);
+      }, 300);
 
     }
   }
@@ -190,7 +191,7 @@ animate(){
 
 }
 destroy(){
-
+    
     this.dotWrapper.parentNode.removeChild(this.dotWrapper);
 
 

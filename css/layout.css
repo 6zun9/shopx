@@ -106,6 +106,7 @@ img {
   line-height: 20px;
   box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, .12);
   font-family: 'Lato', sans-serif;
+  margin: 10px 0;
 }
 
 .search-wrapper img {
@@ -210,7 +211,7 @@ img {
 
 .product-card {
   margin: 0 auto;
-  width: 90%;
+  width: 100%;
   box-shadow: 0 0 38px 0 rgba(231, 231, 231, 0.66);
   /* background-color: #ffffff; */
 }
@@ -220,10 +221,13 @@ img {
   height: 49px;
   position: absolute;
   bottom: 15%;
-  left: -15%;
+  left: -25px;
   width: 49px;
   background: #e7a8c6;
   border-radius: 100%;
+}
+.product-status.new{
+  background:#8fd1b8;
 }
 .product-status p {
     padding: 13px 0;
@@ -246,6 +250,7 @@ img {
 .product-image {
   position: relative;
   float: right;
+  width: 80%;
 }
 
 .product-list ul li {
@@ -254,7 +259,7 @@ img {
 
 .product-image img {
   max-width: 100%;
-  height: 260px;
+  height: auto;
 }
 
 .card-product-details {
@@ -267,7 +272,7 @@ img {
 .card-product-details .product-name {
   font-family: 'Titillium Web', sans-serif;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 23px;
   text-transform: capitalize;
   color: #000000;
   padding-bottom: 15px;
@@ -319,14 +324,10 @@ img {
 }
 
 /* page section starts */
-#page-section {
-  margin: 10px 0;
-}
+
 
 /*banner section */
-#banner {
-    background: #a2e4bc;
-}
+
 
 #banner img {
   max-width: 100%;
@@ -390,9 +391,10 @@ p.original-rate {
 }
 
 .brand-title {
+  display: none;
   transform: rotateX(180deg) rotateY(180deg);
-  position: absolute;
   right: 0;
+  text-transform: capitalize;
   top: 15%;
   font-family: 'Titillium Web', sans-serif;
   font-size: 23px;
@@ -400,7 +402,7 @@ p.original-rate {
   writing-mode: vertical-rl;
   font-weight: 300;
 }
-
+.brand-wrapper{display: none;}
 .info-content {
   padding: 20px 10px;
 }
@@ -419,6 +421,9 @@ p.original-rate {
   color: #ffffff;
   font-family: 'Roboto', sans-serif;
 }
+.info-content a:hover {
+    color: black;
+}
 
 .info-content h3 {
   font-family: 'Titillium Web';
@@ -433,12 +438,12 @@ p.original-rate {
 }
 
 #services-section ul li {
-  width: 50%;
+  width: 100%;
   float: left;
 }
 
 .service-wrapper {
-  margin: 10px auto;
+  padding: 30px 0;
 }
 
 .service-image img {
@@ -453,6 +458,7 @@ p.original-rate {
   font-size: 16px;
   color: #ffffff;
   text-align: center;
+  margin: 27px 0 0 8px;
 }
 
 .serveice-details {
@@ -461,7 +467,6 @@ p.original-rate {
   font-weight: 300;
   font-family: 'Roboto', sans-serif;
   color: #767676;
-  display: none;
 }
 
 #services-section ul li:nth-child(odd) {
@@ -501,7 +506,9 @@ p.original-rate {
 .company-details a {
   color: #7b7c85;
 }
-
+.company-details a:hover,.top-footer-content ul li a:hover {
+    color: #8ed1b7;
+}
 .footer-nav ul {
   padding-right: 25px;
 }
@@ -576,12 +583,31 @@ footer .title {
 .copyright {
   font-size: 13px;
   color: #7b7c85;
-  font-family: 'lato', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 300;
   text-align: center;
 }
 
 /* responsive media queries */
+@media only screen and (min-width:480px){
+  .product-list ul li{
+    width:50%;
+    float:left;
+  }
+  .product-card {
+    width: 90%;
+}
+.product-image{
+  width:65%;
+}
+.card-product-details .product-name{
+  font-size:16px;
+}
+}
+
+
+
+
 @media only screen and (min-width:768px) {
 
 
@@ -720,8 +746,8 @@ footer .title {
   .product-menu {
     width: 20%;
 }
-.product-image img{
-  height: 330px;
+.product-image{
+  width:80%;
 }
 
   .product-list ul li {
@@ -738,6 +764,7 @@ footer .title {
   .feature-product-info {
     float: right;
     width: 50%;
+    padding-bottom: 10px;
   }
 
   #features-section {
@@ -752,7 +779,7 @@ footer .title {
 
 
   #services-section ul li {
-    width: 25%;
+    width: 50%;
   }
 
   .serveice-details {
@@ -785,16 +812,17 @@ footer .title {
   .copyright {
     line-height: 65px;
     float: left;
-    text-align: center;
   }
 
+  footer .container-fluid {
+      background: url('../images/footer-borderline.png');
+      background-position: top;
+  }
   .bottom-footer {
     margin: 0;
+    padding: 10px 0;
   }
 
-  .service-wrapper {
-    padding: 12px;
-  }
 
   .footer-logo {
     padding-top: 30px;
@@ -830,19 +858,38 @@ footer .title {
 
 .rate-highlighter{
   left:25%;
+  top: 165px;
 }
 .feature-product-info h1{
   font-size:168px;
+  padding: 25px 0;
 }
 .info-content{
   background: url(../images/feature-curl.png);
+  padding: 50px 30px;
 }
-  .service-wrapper {
-    padding: 10px;
+.brand-title{
+  display:block;
+}
+.feature-rate-info{
+  width:45%;
+}
+.brand-wrapper {
+    display: block;
+    float: left;
+    width: 5%;
+    position: relative;
+}
+.brand-wrapper img {
+  max-width: 100%;
+  padding: 10px 0;
+  height: 500px;
+}
+
+  #services-section ul li{
+    width:25%;
   }
-  .product-image img{
-    height:300px;
-  }
+
 
   .product-list ul li {
     width: 33%;
